@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>H5P Test</title>
+  <link rel="stylesheet" href="assets/styles/h5p.css">
+  <link rel="stylesheet" href="assets/styles/custom-style.css"> <!-- CSS personalizado -->
+  <script type="text/javascript" src="/assets/main.bundle.js"></script>
+</head>
+
+<body>
+  <div id="h5p-container"></div>
+
+  <script type="text/javascript">
+    const { H5P } = H5PStandalone;
+    new H5P(document.getElementById('h5p-container'), {
+      h5pJsonPath: './h5p-folder',
+      frameJs: './assets/frame.bundle.js',
+      frameCss: './assets/styles/h5p.css',
+      frame: true,
+      copyright: true,
+      export: false,
+      downloadUrl: './h5p-folder/content',
+      fullScreen: true,
+      embed: false,
+      embedCode: '<iframe width=":w" height=":h" src="http://127.0.0.1:5500/index.html" frameBorder="0" scrolling="no" style="width:100%"></iframe>',
+      customCss: ['./assets/styles/custom-style.css'],
+    });
+  </script>
+</body>
+</html>
+
