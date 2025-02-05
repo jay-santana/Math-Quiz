@@ -5,7 +5,7 @@
   <title>H5P Test</title>
   <link rel="stylesheet" href="assets/styles/h5p.css">
   <link rel="stylesheet" href="assets/styles/custom-style.css"> <!-- CSS personalizado -->
-  <script type="text/javascript" src="/assets/main.bundle.js"></script>
+  <script type="text/javascript" src="assets/main.bundle.js"></script>
 </head>
 
 <body>
@@ -14,17 +14,17 @@
   <script type="text/javascript">
     const { H5P } = H5PStandalone;
     new H5P(document.getElementById('h5p-container'), {
-      h5pJsonPath: './h5p-folder',
-      frameJs: './assets/frame.bundle.js',
-      frameCss: './assets/styles/h5p.css',
+      h5pJsonPath: 'h5p-folder',
+      frameJs: 'assets/frame.bundle.js',
+      frameCss: 'assets/styles/h5p.css',
       frame: true,
       copyright: true,
       export: false,
-      downloadUrl: './h5p-folder/content',
+      downloadUrl: 'h5p-folder/content',
       fullScreen: true,
       embed: false,
-      embedCode: '<iframe width=":1600" height=":900" src="https://jay-santana.github.io/Math-Quiz" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"style="width:100%;"></iframe>',
-      customCss: ['./assets/styles/custom-style.css'],
+      embedCode: '<iframe width=":1600" height=":900" src="http://127.0.0.1:5500/index.html" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"style="width:100%;"></iframe>',
+      customCss: ['assets/styles/custom-style.css'],
     });
   </script>
 </body>
