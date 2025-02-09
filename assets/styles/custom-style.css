@@ -50,9 +50,9 @@ html, body {
 
 .h5p-baq .h5p-baq-intro-page-title * {
   color: #014876 !important;
-  font-size: 36px !important;
-  font-size: clamp(24px, 4vw, 38px) !important;
   font-weight: bold;
+  /* font-size: 36px; */
+  font-size: clamp(24px, 4vw, 40px) !important;
   word-wrap: break-word;
   text-shadow: 3px 2px 2px rgba(2, 103, 170, 0.329) !important;
   display:inline-flex;
