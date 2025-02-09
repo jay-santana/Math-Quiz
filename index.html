@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -6,6 +5,7 @@
   <link rel="stylesheet" href="assets/styles/h5p.css">
   <link rel="stylesheet" href="assets/styles/custom-style.css"> <!-- CSS personalizado -->
   <script type="text/javascript" src="assets/main.bundle.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script> <!-- JS personalizado -->
 </head>
 
 <body>
@@ -13,7 +13,8 @@
 
   <script type="text/javascript">
     const { H5P } = H5PStandalone;
-    new H5P(document.getElementById('h5p-container'), {
+    const el = document.getElementById('h5p-container');
+    const options = {
       h5pJsonPath: 'h5p-folder',
       frameJs: 'assets/frame.bundle.js',
       frameCss: 'assets/styles/h5p.css',
@@ -23,10 +24,13 @@
       downloadUrl: 'h5p-folder/content',
       fullScreen: true,
       embed: false,
-      embedCode: '<iframe width=":1600" height=":900" src="https://jay-santana.github.io/Math-Quiz/index.html" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"style="width:100%;"></iframe>',
-      customCss: ['assets/styles/custom-style.css'],
+      embedCode: '<iframe width="1600" height="900" src="https://jay-santana.github.io/Math-Quiz/index.html" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *" style="width:100%;"></iframe>',
+      customCss: ['assets/styles/custom-style.css'], // custom stylesheets
+      customJs: 'assets/js/script.js' // custom JavaScript
+    };
+
+    new H5P(el, options).then(() => {
     });
   </script>
 </body>
 </html>
-

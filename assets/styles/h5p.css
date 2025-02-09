@@ -34,7 +34,7 @@ html.h5p-iframe, html.h5p-iframe > body {
   margin: 0;
   padding: 0;
 }
-.h5p-semi-fullscreen, .h5p-fullscreen, html.h5p-iframe .h5p-container {
+.h5p-semi-fullscreen, .h5p-fullscreen, .h5p-disable-fullscreen, .h5p-iframe .h5p-container {
   overflow: hidden;
 }
 .h5p-content {
@@ -103,6 +103,15 @@ body.h5p-semi-fullscreen {
   display: none;
 }
 
+.h5p-disable-fullscreen .h5p-content-controls {
+  display: none;
+}
+
+/* Garantir que o botão desapareça no semi-fullscreen */
+.h5p-semi-fullscreen .h5p-disable-fullscreen {
+  display: none;
+}
+
 .h5p-content-controls > a:link, .h5p-content-controls > a:visited, a.h5p-disable-fullscreen:link, a.h5p-disable-fullscreen:visited {
   color: #e5eef6;
 }
@@ -134,12 +143,12 @@ body.h5p-semi-fullscreen {
   height: 0.9em;
 }
 
-.h5p-enable-fullscreen:focus,
+/* .h5p-enable-fullscreen:focus,
 .h5p-disable-fullscreen:focus {
   outline-style: solid;
   outline-width: 1px;
   outline-offset: 0.25em;
-}
+} */
 
 .h5p-enable-fullscreen:hover, .h5p-disable-fullscreen:hover {
   background: rgba(0,0,0,0.5);
@@ -148,20 +157,6 @@ body.h5p-semi-fullscreen {
   display: none;
 }
 
-div.h5p-container .h5p-enable-fullscreen {
-  /* Sobrescrevendo com maior especificidade */
-  box-sizing: initial !important;
-  line-height: normal !important;
-  text-shadow: none !important;
-  font-size: inherit;
-  background: none !important;
-  color: inherit !important;
-  font-size: 2em !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.2em;
-}
 div.h5p-fullscreen {
   width: 100%;
   height: 100%;

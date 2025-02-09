@@ -4,6 +4,11 @@ html.h5p-iframe, html.h5p-iframe > body {
   font-family: 'Times New Rome', serif !important;
 }
 
+.h5p-container {
+  height: 625px !important;
+  max-height: 100%;
+}
+
 .h5p-baq {
   background-image: url(../images/math-background-02.jpg);
   /* background: #ff69b4 !important; */
@@ -15,15 +20,21 @@ html.h5p-iframe, html.h5p-iframe > body {
 }
 
 .h5p-joubelui-button.mq-control-button {
-  margin-bottom: 14% !important;
-  margin-top: 3em;
+  margin-bottom: 12% !important;
+  margin-top: 2em;
 }
 
 .h5p-baq .h5p-baq-intro-page-title * {
   color: #014876 !important;
-  font-size: 30px !important;
+  font-size: 36px !important;
   font-weight: bold;
+  word-wrap: break-word;
   text-shadow: 3px 2px 2px rgba(2, 103, 170, 0.329) !important;
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 96%; */
+  padding: 0.4em;
 }
 
 .h5p-baq-intro-page {
@@ -59,7 +70,27 @@ div.h5p-fullscreen {
   color: #0072bb !important;
   box-sizing: border-box;
   line-height: 1.25;
-  text-shadow: 5px 2px 2px rgba(255, 255, 255, 0.5) !important;
+}
+
+div.h5p-container .h5p-enable-fullscreen {
+  text-shadow: none !important;
+  background: none !important;
+  font-size: 2.8em !important;
+  font-weight:600;
+  margin-top: 0.2em;
+}
+
+.h5p-disable-fullscreen {
+  display: block;
+  text-shadow: none !important;
+  background: none !important;
+  color: #0072bb !important;
+  font-size: 5em !important;
+  font-weight:600;
+  position: absolute;
+  top: 20px;
+  right: 6px; 
+  z-index: 1000;
 }
 
 .h5p-baq .question {
@@ -127,14 +158,17 @@ div.h5p-fullscreen {
   cursor: url('../images/custom-cursor.png'), auto;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 570px) {
   .h5p-baq-alternatives > .h5p-joubelui-button {
     width: 40% !important;
   }
 }
 
-@media screen and (max-device-width: 1090px) and (max-height: 1080px) and (orientation:landscape) {
+@media screen and (max-device-width: 1920px) and (max-height: 1080px) and (orientation:landscape) {
   .h5p-baq-alternatives > .h5p-joubelui-button {
     width: 29% !important;
   }
 }
+
+
+

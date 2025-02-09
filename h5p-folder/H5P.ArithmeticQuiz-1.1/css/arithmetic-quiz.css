@@ -58,7 +58,7 @@
 .h5p-baq {
   font-family: "Lato", sans-serif;
   overflow: hidden;
-  background: #1394c7;
+  /* background: #1394c7; */
   color: #fff;
   font-size: 28px;
   text-align: center;
@@ -116,7 +116,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background: #1394c7;
+  /* background: #1394c7; */
 }
 .h5p-baq-intro-page-inner {
   position: relative;
