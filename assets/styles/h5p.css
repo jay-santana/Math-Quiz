@@ -124,6 +124,7 @@ body.h5p-semi-fullscreen {
 .h5p-disable-fullscreen:before {
   font-family: 'H5P';
   content: "\e891";
+  padding: 0.2em;
 }
 
 .h5p-enable-fullscreen, .h5p-disable-fullscreen {
