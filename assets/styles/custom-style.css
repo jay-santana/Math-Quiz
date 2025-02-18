@@ -29,9 +29,8 @@ html, body {
 }
 
 .h5p-baq-intro-page {
-  background-image: url(../images/math-background-01.jpg);
+  background-image: url(../images/math-background-01.jpg) !important;
   /* background: #ff69b4 !important; */
-  background-color: #000;
   background-size:cover;
   background-position: center; 
   background-repeat: no-repeat;
@@ -76,9 +75,8 @@ html, body {
 }
 
 .h5p-baq {
-  background-image: url(../images/math-background-02.jpg);
+  background-image: url(../images/math-background-02.jpg) !important;
   /* background: #ff69b4 !important; */
-  background-color: #000;
   background-size:cover;
   background-position: center; 
   background-repeat: no-repeat;
